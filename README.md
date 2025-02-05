@@ -1,13 +1,14 @@
 
-# NEURAL FLEX
-@Akash Sharma 
+# NEURAL FLEX 
 
 <p align="center">
-  <img src="images/neural_flex.png" alt="My Image" width="400">
+  <img src="images/neural_flex.png" alt="My Image" width="800">
 </p>
 
 🚀 **Hack Faster, Code Longer!** An **ergonomic split keyboard** keeps your hands in a **natural position**, reducing strain so you can **Vim like a boss**—no more RSI slowing you down.
+
 ⌨️ **Modal Editing, Meet Peak Ergonomics!** Keep your fingers on **home row**, map keys to perfection, and **stay in the zone** with ultimate comfort.
+
 🔥 **No More Pinky Pain, Just Pure Speed!** Tame your **keybindings**, master **efficiency**, and **outlast your deadlines**—because real coders optimize everything.
 
 
