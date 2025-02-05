@@ -14,18 +14,18 @@
 
 ## Phases (Learning and Studying)
 - 3D Modelling 
-	- [ ] Autocad/ Solidworks learning : https://www.youtube.com/watch?v=2OdIF515FEg
-	- [ ] How kicad_pcb file needs stp files :  https://github.com/sol/KBDevBoard/tree/main
+	- [x] Autocad/ Solidworks learning : https://www.youtube.com/watch?v=2OdIF515FEg
+	- [x] How kicad_pcb file needs stp files :  https://github.com/sol/KBDevBoard/tree/main
 - Firmware coding
 	- [ ] What is QMK ? : https://browse.qmk.fm/#/
 		- [ ] Keyboard QMK : https://github.com/qmk/qmk_firmware
 	- [ ] Deployment on Arduino nano : https://www.youtube.com/watch?v=w87o1xF4uQw
 	- [ ] Simulink for hardware MBD : https://www.youtube.com/watch?v=EP1rsGYHOh0&list=PLnfr5me4laRfAP01ecxGRPx42hwG-qJ3v
 - 3D Printing
-	- Openscad learning : https://www.youtube.com/watch?v=6o9H6VraCaw
-	- Open source modelling files : https://gitlab.com/alexives/keyboard_lib
+	- [x] Openscad learning : https://www.youtube.com/watch?v=6o9H6VraCaw
+	- [x] Open source modelling files : https://gitlab.com/alexives/keyboard_lib
 - PCB Fabrication
-	- [ ] Study https://github.com/ruiqimao/keyboard-pcb-guide
+	- [x] Study https://github.com/ruiqimao/keyboard-pcb-guide
 	- [ ] How to design PCB geber files ? https://www.youtube.com/watch?v=d5jGt7FpBiA
 	- [ ] Understanding Kicad designer for mechanical keyboard : https://www.youtube.com/watch?v=8WXpGTIbxlQ
 	- [ ] Where to order ? 
