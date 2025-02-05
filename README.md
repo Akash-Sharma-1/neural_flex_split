@@ -1,5 +1,5 @@
 
-# NEURAL FLEX 
+# NEURAL FLEX : the next gen split keyboard 
 
 <p align="center">
   <img src="images/neural_flex.png" alt="My Image" width="800">
