@@ -1,13 +1,13 @@
 /*
-  Split Keyboard Firmware for Arduino Nano
+  Split Keyboard Firmware for Arduino Nano board
   
   This firmware allows communication between two halves of a split keyboard.
   Left side scans keys and sends the state to the right side via serial.
   Right side combines both halves' states and sends to the computer via USB.
   
-  Copyright 2025 (Your Name)
+  Copyright FEB 2025 : AKASH O' MATICS 
   
-  Licensed under the MIT License
+  Licensed under the MIT License 
 */
 
 #include <Arduino.h>
@@ -565,7 +565,6 @@ bool macroRecordKeyPressed() {
 
 void updateLEDs() {
   // LED management for different states
-  // In a real implementation, this would update LEDs based on current state
   
   // Example using Serial instead of actual LEDs
   static KeyboardState previousState = STATE_NORMAL;
@@ -573,9 +572,16 @@ void updateLEDs() {
   
   if (currentState != previousState || currentLayer != previousLayer) {
     Serial.print("State: ");
+
+    // rgblight_sethsv(currentState * 5, 230, 70);
+
     Serial.print(currentState);
+
+    // flash_led(currentLayer);
     Serial.print(", Layer: ");
+    
     Serial.println(currentLayer);
+
     
     previousState = currentState;
     previousLayer = currentLayer;
