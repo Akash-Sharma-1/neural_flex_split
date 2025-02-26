@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f8f8" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Split Keyboard Stateflow Model</text>
+  
+  <!-- States -->
+  <!-- Normal State -->
+  <rect x="150" y="100" width="150" height="100" fill="#cfe2f3" stroke="#000" stroke-width="2" />
+  <text x="225" y="140" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">STATE_NORMAL</text>
+  <text x="225" y="160" font-family="Arial" font-size="10" text-anchor="middle">Process keys</text>
+  <text x="225" y="175" font-family="Arial" font-size="10" text-anchor="middle">Update LEDs</text>
+  <text x="225" y="190" font-family="Arial" font-size="10" text-anchor="middle">Handle layer changes</text>
+  
+  <!-- Waiting State -->
+  <rect x="150" y="250" width="150" height="100" fill="#d9ead3" stroke="#000" stroke-width="2" />
+  <text x="225" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">STATE_WAITING</text>
+  <text x="225" y="310" font-family="Arial" font-size="10" text-anchor="middle">Wait for keys release</text>
+  <text x="225" y="325" font-family="Arial" font-size="10" text-anchor="middle">Next state: variable</text>
+  
+  <!-- Programming Source State -->
+  <rect x="350" y="100" width="150" height="100" fill="#d5a6bd" stroke="#000" stroke-width="2" />
+  <text x="425" y="140" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PROGRAMMING_SRC</text>
+  <text x="425" y="160" font-family="Arial" font-size="10" text-anchor="middle">Flash LED</text>
+  <text x="425" y="175" font-family="Arial" font-size="10" text-anchor="middle">Wait for source key</text>
+  
+  <!-- Programming Destination State -->
+  <rect x="350" y="250" width="150" height="100" fill="#d5a6bd" stroke="#000" stroke-width="2" />
+  <text x="425" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PROGRAMMING_DST</text>
+  <text x="425" y="310" font-family="Arial" font-size="10" text-anchor="middle">Flash LED slowly</text>
+  <text x="425" y="325" font-family="Arial" font-size="10" text-anchor="middle">Wait for dest key</text>
+  
+  <!-- Macro Record Trigger State -->
+  <rect x="150" y="400" width="150" height="100" fill="#fce5cd" stroke="#000" stroke-width="2" />
+  <text x="225" y="440" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">MACRO_RECORD_TRIGGER</text>
+  <text x="225" y="460" font-family="Arial" font-size="10" text-anchor="middle">Flash LED quickly</text>
+  <text x="225" y="475" font-family="Arial" font-size="10" text-anchor="middle">Wait for trigger combo</text>
+  
+  <!-- Macro Record State -->
+  <rect x="350" y="400" width="150" height="100" fill="#fce5cd" stroke="#000" stroke-width="2" />
+  <text x="425" y="440" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MACRO_RECORD</text>
+  <text x="425" y="460" font-family="Arial" font-size="10" text-anchor="middle">Flash LED</text>
+  <text x="425" y="475" font-family="Arial" font-size="10" text-anchor="middle">Record key presses</text>
+  
+  <!-- Macro Play State -->
+  <rect x="550" y="400" width="150" height="100" fill="#fce5cd" stroke="#000" stroke-width="2" />
+  <text x="625" y="440" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MACRO_PLAY</text>
+  <text x="625" y="460" font-family="Arial" font-size="10" text-anchor="middle">Solid LED</text>
+  <text x="625" y="475" font-family="Arial" font-size="10" text-anchor="middle">Play back recorded keys</text>
+  
+  <!-- Junction -->
+  <circle cx="550" cy="300" r="15" fill="#fff" stroke="#000" stroke-width="2" />
+  <text x="550" y="305" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">J</text>
+  
+  <!-- Transitions -->
+  <!-- Default transition to Normal -->
+  <path d="M 50,50 L 100,100" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="60" y="60" font-family="Arial" font-size="10">start</text>
+  
+  <!-- Normal to Waiting (for Macro Record Trigger) -->
+  <path d="M 225,200 L 225,250" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="230" y="225" font-family="Arial" font-size="9" text-anchor="start">PROGRAM
